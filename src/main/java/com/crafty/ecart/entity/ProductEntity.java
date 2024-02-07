@@ -36,6 +36,9 @@ public class ProductEntity {
 	@Column(columnDefinition = "BLOB")
 	public Byte[] ProductImage;
 	
+	
+	//public Long CategoryId;	
+	
     @ManyToOne(fetch = FetchType.EAGER)  
     public CategoryEntity category;
 	
