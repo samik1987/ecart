@@ -25,6 +25,7 @@ public class CategoryEntity {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	public Long CategoryId;	
 	
+	
 	public String CategoryName;
 	
 	@Lob
@@ -35,7 +36,6 @@ public class CategoryEntity {
 	@Column(columnDefinition = "BLOB")
 	public Byte[] CategoryImage;	
 	
-	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY ,mappedBy = "category")  
-	public List<ProductEntity> products;
+
 
 }
